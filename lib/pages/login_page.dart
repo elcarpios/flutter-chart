@@ -20,9 +20,9 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Logo(title: 'Messenger'),
+                  LoginLogo(title: 'Messenger'),
                   _Form(),
-                  Labels(
+                  LoginLabels(
                       route: 'register',
                       hintText: 'Do not have an account?',
                       linkText: 'Sign up'),
@@ -53,19 +53,19 @@ class __FormState extends State<_Form> {
       padding: EdgeInsets.symmetric(horizontal: 50),
       child: Column(
         children: [
-          Input(
+          LoginInput(
             icon: Icons.mail_outline,
             placeholder: 'Email',
             textController: emailController,
             keyboardType: TextInputType.emailAddress,
           ),
-          Input(
+          LoginInput(
             icon: Icons.lock_outline,
             placeholder: 'Password',
             textController: passwordController,
             isPassword: true,
           ),
-          Button(
+          LoginButton(
               text: 'Sign in',
               onPressed: () {
                 print(emailController.text);

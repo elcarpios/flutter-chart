@@ -20,9 +20,9 @@ class RegisterPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Logo(title: 'Register'),
+                  LoginLogo(title: 'Register'),
                   _Form(),
-                  Labels(
+                  LoginLabels(
                       route: 'login',
                       hintText: 'Do you already have an account?',
                       linkText: 'Sign in'),
@@ -54,23 +54,23 @@ class __FormState extends State<_Form> {
       padding: EdgeInsets.symmetric(horizontal: 50),
       child: Column(
         children: [
-          Input(
+          LoginInput(
               icon: Icons.perm_identity,
               placeholder: 'Name',
               textController: nameController),
-          Input(
+          LoginInput(
             icon: Icons.mail_outline,
             placeholder: 'Email',
             textController: emailController,
             keyboardType: TextInputType.emailAddress,
           ),
-          Input(
+          LoginInput(
             icon: Icons.lock_outline,
             placeholder: 'Password',
             textController: passwordController,
             isPassword: true,
           ),
-          Button(
+          LoginButton(
               text: 'Sign up',
               onPressed: () {
                 print(emailController.text);

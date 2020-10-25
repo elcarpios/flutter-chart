@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Labels extends StatelessWidget {
-  const Labels(
+class LoginLabels extends StatelessWidget {
+  const LoginLabels(
       {@required this.route,
       @required this.hintText,
       @required this.linkText,

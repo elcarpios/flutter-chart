@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Input extends StatelessWidget {
-  const Input(
+class LoginInput extends StatelessWidget {
+  const LoginInput(
       {Key key,
       @required this.icon,
       @required this.placeholder,

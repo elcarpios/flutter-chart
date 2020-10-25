@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Button extends StatelessWidget {
-  const Button({@required this.onPressed, @required this.text, Key key})
+class LoginButton extends StatelessWidget {
+  const LoginButton({@required this.onPressed, @required this.text, Key key})
       : super(key: key);
 
   final Function onPressed;
